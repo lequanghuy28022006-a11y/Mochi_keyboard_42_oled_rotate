@@ -1,6 +1,6 @@
 /*
  * Aidan Smith (2021)
- *
+ * Enhanced for Developer Workflow on macOS / Cross-platform
  * SPDX-License-Identifier: MIT
  */
 
@@ -18,9 +18,9 @@
             display-name = "BASE";
             bindings = <
 &kp ESC    &kp Q     &kp W     &kp E      &kp R    &kp T      &kp Y        &kp U     &kp I      &kp O     &kp P     &kp BSPC
-&lt 3 TAB  &kp A     &kp S     &kp D      &kp F    &kp G      &kp H        &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V    &kp B      &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-&kp LCTRL  &kp LGUI  &kp LALT  &kp BSLH   &mo 2    &kp SPACE  &lt 1 SPACE  &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT &to 1
+&lt 3 TAB  &kp A     &kp S     &kp D      &kp F    &kp G      &kp H        &kp J     &kp K      &kp L     &kp SEMI  &kp RET
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V    &kp B      &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp SQT
+&kp LCTRL  &kp LGUI  &kp LALT  &kp BSLH   &mo 1    &kp SPACE  &lt 2 SPACE  &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -29,10 +29,10 @@
         lower_layer {
             display-name = "NUM";
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp DEL
-&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G      &kp H      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RET
-&kp LCTRL  &kp LGUI  &kp LALT  &kp BSLH   &trans     &kp SPACE  &trans     &kp HOME   &kp PG_DN  &kp PG_UP &kp END   &to 2
+&kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4   &kp N5     &kp N6       &kp N7       &kp N8       &kp N9    &kp N0    &kp DEL
+&kp TAB    &kp EXCL  &kp AT    &kp HASH   &kp DLLR &kp PRCNT  &kp H        &kp MINUS    &kp EQUAL    &kp LBKT  &kp RBKT  &kp BSLH
+&kp LSHFT  &kp LPAR  &kp RPAR  &kp LBRC   &kp RBRC &kp PLUS   &kp STAR     &kp AMPS     &kp COMMA    &kp DOT   &kp FSLH  &kp RET
+&kp LCTRL  &kp LGUI  &kp LALT  &kp PIPE   &trans   &kp SPACE  &mo 2        &kp C_BRI_DN &kp C_BRI_UP &kp PG_UP &kp PG_DN &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -41,10 +41,10 @@
         raise_layer {
             display-name = "SYM";
             bindings = <
-&kp TILDE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp CARET    &kp AMPS    &kp STAR      &kp LPAR      &kp RPAR  &kp BSPC
-&kp TAB     &kp A         &kp S         &kp D         &kp F         &kp G         &kp H        &kp UNDER   &kp PLUS      &kp LBRC      &kp RBRC  &kp PIPE
-&kp LSHFT   &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N        &kp M       &kp LT        &kp GT        &kp QMARK &kp RET
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &to 3
+&kp TILDE   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7       &kp F8        &kp F9        &kp F10   &kp BSPC
+&kp TAB     &kp F11       &kp F12       &kp HOME      &kp END       &kp PG_UP     &kp PG_DN    &kp UNDER    &kp PLUS      &kp LBRC      &kp RBRC  &kp PIPE
+&kp LSHFT   &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N        &kp M        &kp LT        &kp GT        &kp QMARK &kp RET
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -53,10 +53,10 @@
         control_layer {
             display-name = "MEDIA";
             bindings = <
-&sys_reset      &bootloader  &bt BT_CLR  &bt BT_PRV         &bt BT_NXT   &kp F11    &kp F12    &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK  &kp INS    &kp DEL
-&kp TAB         &kp F1       &kp F2      &kp F3             &kp F4       &kp F5     &kp F6     &kp F7     &kp F8    &kp F9           &kp F10    &kp RET
-&kp LSHFT       &kp Z        &kp X       &kp C              &kp V        &kp B      &kp N      &kp M      &kp COMMA &kp DOT          &kp FSLH   &kp RET
-&studio_unlock  &kp LGUI     &kp LALT    &ext_power EP_TOG  &out OUT_BLE &kp SPACE  &trans     &kp LEFT   &kp DOWN  &kp UP           &kp RIGHT  &to 0
+&sys_reset  &bootloader   &bt BT_CLR    &bt BT_PRV         &bt BT_NXT    &kp F11       &kp F12      &kp PSCRN    &kp SLCK      &kp PAUSE_BREAK &kp INS   &kp DEL
+&kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT       &kp HOME  &kp END
+&kp LSHFT   &kp Z         &kp X         &kp C              &kp V         &kp B         &kp N        &kp M        &kp COMMA     &kp DOT         &kp FSLH  &kp RET
+&out OUT_TOG &kp LGUI     &kp LALT      &ext_power EP_TOG  &out OUT_BLE  &kp SPACE     &trans       &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PP  &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
