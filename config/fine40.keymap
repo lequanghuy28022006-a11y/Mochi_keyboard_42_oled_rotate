@@ -1,6 +1,6 @@
 /*
  * Aidan Smith (2021)
- * Enhanced for Mochi40 Custom Layout - Fixed No Mission Control
+ * Enhanced for Mochi40 Custom Layout - Exact Matrix Match
  * SPDX-License-Identifier: MIT
  */
 
@@ -20,7 +20,7 @@
 &kp ESC    &kp Q     &kp W     &kp E      &kp R    &kp T      &kp Y      &kp U     &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A     &kp S     &kp D      &kp F    &kp G      &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp RET
 &kp LSHFT  &kp Z     &kp X     &kp C      &kp V    &kp B      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &lt 3 SQT
-&mo 4      &kp LGUI  &kp LALT  &kp BSLH   &mo 1    &kp SPACE  &kp LEFT   &kp DOWN  &kp RIGHT  &mo 2     &kp UP    &to 1
+&mo 4      &kp LGUI  &kp LALT  &kp BSLH   &mo 1    &kp SPACE  &kp DOWN   &kp LEFT  &kp RIGHT  &mo 2     &mo 2     &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -32,7 +32,7 @@
 &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4   &kp N5     &kp N6       &kp N7       &kp N8       &kp N9    &kp N0    &kp DEL
 &kp TAB    &kp EXCL  &kp AT    &kp HASH   &kp DLLR &kp PRCNT  &kp CARET    &kp MINUS    &kp EQUAL    &kp LBKT  &kp RBKT  &kp BSLH
 &kp LSHFT  &kp LPAR  &kp RPAR  &kp LBRC   &kp RBRC &kp PLUS   &kp STAR     &kp AMPS     &kp COMMA    &kp DOT   &kp FSLH  &kp RET
-&kp LCTRL  &kp LGUI  &kp LALT  &kp PIPE   &trans   &kp SPACE  &mo 2        &kp C_BRI_DN &kp C_BRI_UP &mo 2     &kp PG_DN &to 0
+&kp LCTRL  &kp LGUI  &kp LALT  &kp PIPE   &trans   &kp SPACE  &mo 2        &kp C_BRI_DN &kp C_BRI_UP &mo 2     &mo 2     &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -44,7 +44,7 @@
 &kp TILDE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp CARET    &kp AMPS    &kp STAR      &kp LPAR      &kp RPAR  &kp BSPC
 &kp TAB     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7      &kp F8        &kp F9        &kp F10   &kp PIPE
 &kp LSHFT   &kp F11       &kp F12       &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC     &kp LT      &kp GT        &kp QMARK     &kp COLON &kp DQT
-&kp LCTRL   &kp LGUI      &kp LALT      &trans        &mo 1         &kp SPACE     &trans       &kp HOME    &kp END       &trans        &kp PG_DN &to 0
+&kp LCTRL   &kp LGUI      &kp LALT      &trans        &mo 1         &kp SPACE     &trans       &kp HOME    &kp END       &trans        &trans    &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -67,8 +67,8 @@
             bindings = <
 &none      &none     &none     &none      &none    &none      &none      &none     &none      &none     &none     &none
 &none      &none     &none     &none      &none    &none      &none      &none     &none      &none     &none     &none
-&none      &none     &none     &none      &none    &none      &none      &none     &none      &kp UP    &none     &none
-&trans     &none     &none     &none      &none    &none      &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp UP    &none
+&none      &none     &none     &none      &none    &none      &none      &none     &kp UP     &kp UP    &kp UP    &none
+&trans     &none     &none     &none      &none    &none      &kp DOWN   &kp LEFT  &kp RIGHT  &kp RIGHT &kp RIGHT &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
