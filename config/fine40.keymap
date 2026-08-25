@@ -1,6 +1,6 @@
 /*
  * Aidan Smith (2021)
- * Enhanced for Mochi40 Custom Layout - Exact Perfect Approved Keymap
+ * Enhanced for Mochi40 Custom Layout - Arrow Keys Swapped Exactly
  * SPDX-License-Identifier: MIT
  */
 
@@ -68,7 +68,7 @@
 &none      &none     &none     &none      &none    &none      &none      &none     &none      &none     &none     &none
 &none      &none     &none     &none      &none    &none      &none      &none     &none      &none     &none     &none
 &none      &none     &none     &none      &none    &none      &none      &none     &none      &kp UP    &none     &none
-&trans     &none     &none     &none      &none    &none      &kp LEFT   &kp DOWN  &kp RIGHT  &mo 2     &mo 2     &none
+&trans     &none     &none     &none      &none    &none      &kp DOWN   &kp LEFT  &kp RIGHT  &kp RIGHT &mo 2     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
